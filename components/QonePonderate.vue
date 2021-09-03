@@ -5,7 +5,7 @@
       <h3 class="text-lg leading-6 font-medium text-gray-900">
         Selon-vous
       </h3>
-      <p class="mt-2 max-w-4xl text-sm text-gray-500">La question précédente nous a permis de connaitre votr eniveau de compétence ?</p>
+      <p class="mt-2 max-w-4xl text-sm text-gray-500">La question précédente nous a t-elle permis de valider le lien du diplôme avec votre ou vos métiers ?</p>
     </div>
 
     <fieldset class="mt-2">
