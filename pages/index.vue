@@ -1,6 +1,6 @@
 <template>
   <div class="p-8 flex justify-center bg-yellow-100">
-    <div class="w-full max-w-xl mx-auto pt-12 sm:pt-20">
+    <div class="w-full h-full max-w-xl mx-auto pt-12 sm:pt-20">
 
       <div class="md:flex md:items-center md:justify-between py-12">
         <div class="flex-1 min-w-0">
