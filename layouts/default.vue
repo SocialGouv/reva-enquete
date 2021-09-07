@@ -1,7 +1,7 @@
 <template>
   <div class="antialiased">
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="lg:border-t lg:border-b lg:border-gray-200">
+    <!-- Stepper Desktop -->
+    <div class="hidden sm:block lg:border-t lg:border-b lg:border-gray-200">
       <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Progress">
         <ol role="list" class="rounded-md overflow-hidden lg:flex lg:border-l lg:border-r lg:border-gray-200 lg:rounded-none">
           <li class="relative overflow-hidden lg:flex-1">
@@ -83,6 +83,46 @@
         </ol>
       </nav>
     </div>
+
+    <!-- Stepper Mobile -->
+    <nav class="block sm:hidden flex items-center justify-center py-8" aria-label="Progress">
+      <p class="text-sm font-medium">Step 2 of 4</p>
+      <ol role="list" class="ml-8 flex items-center space-x-5">
+        <li>
+          <!-- Completed Step -->
+          <a href="#" class="block w-2.5 h-2.5 bg-indigo-600 rounded-full hover:bg-indigo-900">
+            <span class="sr-only">Step 1</span>
+          </a>
+        </li>
+
+        <li>
+          <!-- Current Step -->
+          <a href="#" class="relative flex items-center justify-center" aria-current="step">
+            <span class="absolute w-5 h-5 p-px flex" aria-hidden="true">
+              <span class="w-full h-full rounded-full bg-indigo-200"></span>
+            </span>
+            <span class="relative block w-2.5 h-2.5 bg-indigo-600 rounded-full" aria-hidden="true"></span>
+            <span class="sr-only">Step 2</span>
+          </a>
+        </li>
+
+        <li>
+          <!-- Upcoming Step -->
+          <a href="#" class="block w-2.5 h-2.5 bg-gray-200 rounded-full hover:bg-gray-400">
+            <span class="sr-only">Step 3</span>
+          </a>
+        </li>
+
+        <li>
+          <!-- Upcoming Step -->
+          <a href="#" class="block w-2.5 h-2.5 bg-gray-200 rounded-full hover:bg-gray-400">
+            <span class="sr-only">Step 4</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+
 
     <div id="app">
       <nuxt />

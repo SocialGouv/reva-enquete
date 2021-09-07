@@ -6,9 +6,9 @@
 
         <div class="pb-5">
           <h3 class="text-2xl leading-10 font-medium text-gray-900">
-            J'ai exercé un métier en lien avec le diplôme
+            J'ai suffisamment d'expériences pour connaitre mon métier
           </h3>
-          <p class="mt-2 max-w-4xl text-sm text-gray-500">Exemple : j'ai exercé le métier de Boulanger, je peux donc prétendre à la certification "Boulanger"</p>
+          <!-- <p class="mt-2 max-w-4xl text-sm text-gray-500">Exemple : j'ai exercé le métier de Boulanger, je peux donc prétendre à la certification "Boulanger"</p> -->
         </div>
 
         <fieldset class="mt-2">
@@ -23,12 +23,12 @@
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
                 <span id="pre-bilan-0-label" class="block text-sm font-medium">
-                  Non
+                  Pas du tout d'accord
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <span id="pre-bilan-0-description" class="block text-sm text-gray-500">
+                <!-- <span id="pre-bilan-0-description" class="block text-sm text-gray-500">
                   Je n'ai pas du tout exercé de métier en lien avec le diplôme
-                </span>
+                </span> -->
               </div>
             </label>
 
@@ -38,12 +38,12 @@
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
                 <span id="pre-bilan-1-label" class="block text-sm font-medium">
-                  Pas complètement
+                  Pas d'accord
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <span id="pre-bilan-1-description" class="block text-sm text-gray-500">
+                <!-- <span id="pre-bilan-1-description" class="block text-sm text-gray-500">
                   J'ai exercé un métier en partie ou similaire au diplôme
-                </span>
+                </span> -->
               </div>
             </label>
 
@@ -53,12 +53,12 @@
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
                 <span id="pre-bilan-2-label" class="block text-sm font-medium">
-                  Oui, un métier et peu de temps
+                  Ni d'accord, ni pas d'accord
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <span id="pre-bilan-2-description" class="block text-sm text-gray-500">
+                <!-- <span id="pre-bilan-2-description" class="block text-sm text-gray-500">
                   J'ai exercé un métier en lien avec le diplôme peu de temps mais suffisament pour valider mes compétences
-                </span>
+                </span> -->
               </div>
             </label>
 
@@ -68,12 +68,12 @@
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
                 <span id="pre-bilan-3-label" class="block text-sm font-medium">
-                  Oui, un métier pendant longtemps
+                  Plutôt d'accord
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <span id="pre-bilan-3-description" class="block text-sm text-gray-500">
+                <!-- <span id="pre-bilan-3-description" class="block text-sm text-gray-500">
                   J'ai exercé un métier en lien avec le diplôme suffisament de temps
-                </span>
+                </span> -->
               </div>
             </label>
 
@@ -86,9 +86,9 @@
                   Oui, plusieurs
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <span id="pre-bilan-4-description" class="block text-sm text-gray-500">
+                <!-- <span id="pre-bilan-4-description" class="block text-sm text-gray-500">
                   J'ai exercé plusieurs métiers fortement liés au diplôme
-                </span>
+                </span> -->
               </div>
             </label>
 
