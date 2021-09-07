@@ -57,7 +57,7 @@
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
                 <span id="pre-bilan-2-description" class="block text-sm text-gray-500">
-                  J'ai exercé un métier en lien avec le diplôme peu de temps mais suffisament pour valider mes compétences
+                  J'ai exercé un métier en lien avec le diplôme peu de temps mais suffisamment pour valider mes compétences
                 </span>
               </div>
             </label>
@@ -72,7 +72,7 @@
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
                 <span id="pre-bilan-3-description" class="block text-sm text-gray-500">
-                  J'ai exercé un métier en lien avec le diplôme suffisament de temps
+                  J'ai exercé un métier en lien avec le diplôme suffisamment de temps
                 </span>
               </div>
             </label>
@@ -111,7 +111,7 @@
           <div class="bg-white rounded-md -space-y-px">
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
+            <label @click="more" class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
               <input type="radio" name="enquete-interne" value="0" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-0-label" aria-describedby="enquete-interne-0-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -122,7 +122,7 @@
             </label>
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="relative border p-4 flex cursor-pointer focus:outline-none">
+            <label @click="more" class="relative border p-4 flex cursor-pointer focus:outline-none">
               <input type="radio" name="enquete-interne" value="1" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-1-label" aria-describedby="enquete-interne-1-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -133,7 +133,7 @@
             </label>
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+            <label @click="more" class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
               <input type="radio" name="enquete-interne" value="3" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-2-label" aria-describedby="enquete-interne-2-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -166,6 +166,14 @@
             </label>
 
           </div>
+          <div v-if="displayMore" class="mt-4">
+            <label for="about" class="block text-sm font-medium sm:mt-px sm:pt-2">
+              Pouvez-vous compléter votre choix ?
+            </label>
+            <div class="mt-1 sm:mt-0 sm:col-span-2">
+              <textarea id="about" name="about" rows="5" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"></textarea>
+            </div>
+          </div>
         </fieldset>
 
         <div class="md:flex md:items-center md:justify-between py-12">
@@ -191,9 +199,10 @@
 export default {
   data() {
     return {
-      preBilan: 0,
-      enqueteInterne: 0,
+      preBilan: null,
+      enqueteInterne: null,
       displayEnqueteInterne: false,
+      displayMore: false,
     }
   },
   methods: {
@@ -205,6 +214,9 @@ export default {
     },
     previousPage () {
       // goto
+    },
+    more() {
+      this.displayMore = true
     }
   }
 }

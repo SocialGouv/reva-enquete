@@ -6,9 +6,9 @@
 
         <div class="pb-5">
           <h3 class="text-2xl leading-10 font-medium text-gray-900">
-            J'ai des expériences professionnelles à valoriser
+            Je suis sûr.e d'obtenir mon diplôme
           </h3>
-          <p class="mt-2 max-w-4xl text-sm text-gray-500">Les pratiques et les savoir-faire sont aussi valorisables</p>
+          <!-- <p class="mt-2 max-w-4xl text-sm text-gray-500">Les pratiques et les savoir-faire sont aussi valorisables</p> -->
         </div>
 
         <fieldset class="mt-2">
@@ -102,7 +102,7 @@
       <div class="w-full max-w-xl mx-auto pt-8">
         <div class="pb-5">
           <p class="mt-2 max-w-4xl text-xl text-gray-800">
-            Selon vous, la question ci-dessus permet de quantifier vos expériences, vos pratiques et vos savoir-faire
+            Selon vous, la question ci-dessus permet de mesurer ma confiance en mon obtention du diplôme
           </p>
         </div>
 
@@ -180,12 +180,12 @@
 
         <div class="md:flex md:items-center md:justify-between py-12">
           <div class="flex-1 min-w-0">
-            <nuxt-link to="metier" type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <nuxt-link to="confiance_choix" type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Question précédente
             </nuxt-link>
           </div>
           <div class="mt-4 flex md:mt-0 md:ml-4">
-            <nuxt-link to="motivation_intrinseque" type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-700 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <nuxt-link to="disponibilite" type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-700 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Question suivante
             </nuxt-link>
           </div>
