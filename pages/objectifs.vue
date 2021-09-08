@@ -6,9 +6,9 @@
 
         <div class="pb-5">
           <h3 class="text-2xl leading-10 font-medium text-gray-900">
-            J'ai des expériences professionnelles à valoriser
+            Suite à l'obtention de mon diplôme, j'ai pour objectif(s)
           </h3>
-          <p class="mt-2 max-w-4xl text-sm text-gray-500">Les pratiques et les savoir-faire sont aussi valorisables</p>
+          <p class="mt-2 max-w-4xl text-sm text-gray-500">Plusieurs choix possibles</p>
         </div>
 
         <fieldset class="mt-2">
@@ -18,27 +18,57 @@
           <div class="bg-white rounded-md -space-y-px">
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
-              <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="4" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-4-label" aria-describedby="pre-bilan-4-description">
+            <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <input type="checkbox" v-model="preBilan" name="pre-bilan" value="0" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-0-label" aria-describedby="pre-bilan-0-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
-                <span id="pre-bilan-4-label" class="block text-sm font-medium">
-                  Complètement d'accord
+                <span id="pre-bilan-0-label" class="block text-sm font-medium">
+                  Retrouver du travail
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <!-- <span id="pre-bilan-4-description" class="block text-sm text-gray-500">
-                  J'ai exercé plusieurs métiers fortement liés au diplôme
+                <!-- <span id="pre-bilan-0-description" class="block text-sm text-gray-500">
+                  Je n'ai pas du tout exercé de métier en lien avec le diplôme
+                </span> -->
+              </div>
+            </label>
+
+            <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
+            <label class="relative border p-4 flex cursor-pointer focus:outline-none">
+              <input type="checkbox" v-model="preBilan" name="pre-bilan" value="1" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-1-label" aria-describedby="pre-bilan-1-description">
+              <div class="ml-3 flex flex-col">
+                <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
+                <span id="pre-bilan-1-label" class="block text-sm font-medium">
+                  Avoir du diplôme
+                </span>
+                <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
+                <!-- <span id="pre-bilan-1-description" class="block text-sm text-gray-500">
+                  J'ai exercé un métier en partie ou similaire au diplôme
                 </span> -->
               </div>
             </label>
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
             <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
-              <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="3" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-3-label" aria-describedby="pre-bilan-3-description">
+              <input type="checkbox" v-model="preBilan" name="pre-bilan" value="2" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-2-label" aria-describedby="pre-bilan-2-description">
+              <div class="ml-3 flex flex-col">
+                <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
+                <span id="pre-bilan-2-label" class="block text-sm font-medium">
+                  Certifier mon expérience
+                </span>
+                <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
+                <!-- <span id="pre-bilan-2-description" class="block text-sm text-gray-500">
+                  J'ai exercé un métier en lien avec le diplôme peu de temps mais suffisament pour valider mes compétences
+                </span> -->
+              </div>
+            </label>
+
+            <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
+            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <input type="checkbox" v-model="preBilan" name="pre-bilan" value="3" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-3-label" aria-describedby="pre-bilan-3-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
                 <span id="pre-bilan-3-label" class="block text-sm font-medium">
-                  Plutôt d'accord
+                  Changer d'emploi
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
                 <!-- <span id="pre-bilan-3-description" class="block text-sm text-gray-500">
@@ -49,47 +79,24 @@
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
             <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
-              <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="2" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-2-label" aria-describedby="pre-bilan-2-description">
+              <input type="checkbox" v-model="preBilan" name="pre-bilan" value="4" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-4-label" aria-describedby="pre-bilan-4-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
-                <span id="pre-bilan-2-label" class="block text-sm font-medium">
-                  Ni d'accord, ni pas d'accord
+                <span id="pre-bilan-4-label" class="block text-sm font-medium">
+                  Évoluer dans mon entreprise
                 </span>
                 <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <!-- <span id="pre-bilan-2-description" class="block text-sm text-gray-500">
-                  J'ai exercé un métier en lien avec le diplôme peu de temps mais suffisament pour valider mes compétences
+                <!-- <span id="pre-bilan-4-description" class="block text-sm text-gray-500">
+                  J'ai exercé plusieurs métiers fortement liés au diplôme
                 </span> -->
               </div>
             </label>
 
-            <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="relative border p-4 flex cursor-pointer focus:outline-none">
-              <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="1" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-1-label" aria-describedby="pre-bilan-1-description">
-              <div class="ml-3 flex flex-col">
-                <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
-                <span id="pre-bilan-1-label" class="block text-sm font-medium">
-                  Pas d'accord
-                </span>
-                <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <!-- <span id="pre-bilan-1-description" class="block text-sm text-gray-500">
-                  J'ai exercé un métier en partie ou similaire au diplôme
-                </span> -->
-              </div>
-            </label>
-            
-            <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
-              <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="0" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-0-label" aria-describedby="pre-bilan-0-description">
-              <div class="ml-3 flex flex-col">
-                <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
-                <span id="pre-bilan-0-label" class="block text-sm font-medium">
-                  Pas du tout d'accord
-                </span>
-                <!-- Checked: "text-indigo-700", Not Checked: "text-gray-500" -->
-                <!-- <span id="pre-bilan-0-description" class="block text-sm text-gray-500">
-                  Je n'ai pas du tout exercé de métier en lien avec le diplôme
-                </span> -->
-              </div>
+            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <input type="checkbox" v-model="preBilan" name="pre-bilan" value="4" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-4-label" aria-describedby="pre-bilan-4-description">
+              <p id="pre-bilan-4-label" class="ml-3 block text-sm font-medium">
+                Accéder à une formation
+              </p>
             </label>
 
           </div>
@@ -102,7 +109,7 @@
       <div class="w-full max-w-xl mx-auto pt-8">
         <div class="pb-5">
           <p class="mt-2 max-w-4xl text-xl text-gray-800">
-            Selon vous, la question ci-dessus permet de quantifier vos expériences, vos pratiques et vos savoir-faire
+            Selon vous, la question ci-dessus permet d'évaluer votre aisance avec les outils numériques
           </p>
         </div>
 
@@ -180,13 +187,13 @@
 
         <div class="md:flex md:items-center md:justify-between py-12">
           <div class="flex-1 min-w-0">
-            <nuxt-link to="metier" type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <nuxt-link to="disponibilite" type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Question précédente
             </nuxt-link>
           </div>
           <div class="mt-4 flex md:mt-0 md:ml-4">
-            <nuxt-link to="motivation_intrinseque" type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-700 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Question suivante
+            <nuxt-link to="/" type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-700 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Terminer mon évaluation
             </nuxt-link>
           </div>
         </div>
@@ -208,7 +215,7 @@ export default {
     }
   },
   mounted() {
-    this.$nuxt.$emit('stepper', 2)
+    this.$nuxt.$emit('stepper', 8)
   },
   methods: {
     changePreBilan () {
@@ -222,6 +229,9 @@ export default {
     },
     more() {
       this.displayMore = true
+    },
+    minus() {
+      this.displayMore = false
     }
   }
 }
