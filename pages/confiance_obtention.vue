@@ -1,7 +1,7 @@
 <template>
   <div class="bg-yellow-100 relative">
 
-    <section class="px-4 flex justify-center bg-white transition-opacity" v-bind:class="[displayEnqueteInterne ? 'opacity-50' : 'opacity-100']">
+    <section @click="hidePreBilan" class="px-4 flex justify-center bg-white transition-opacity" v-bind:class="[displayEnqueteInterne ? 'opacity-50' : 'opacity-100']">
       <div class="w-full max-w-xl mx-auto pb-24 pt-6">
 
         <div class="pb-5">
@@ -18,7 +18,7 @@
           <div class="bg-white rounded-md -space-y-px">
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+            <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
               <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="4" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-4-label" aria-describedby="pre-bilan-4-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -33,7 +33,7 @@
             </label>
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+            <label class="relative border p-4 flex cursor-pointer focus:outline-none">
               <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="3" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-3-label" aria-describedby="pre-bilan-3-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -46,9 +46,9 @@
                 </span> -->
               </div>
             </label>
-            
+
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+            <label class="relative border p-4 flex cursor-pointer focus:outline-none">
               <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="2" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-2-label" aria-describedby="pre-bilan-2-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -78,7 +78,7 @@
             </label>
 
             <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-            <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
+            <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
               <input v-on:change="changePreBilan" type="radio" v-model="preBilan" name="pre-bilan" value="0" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="pre-bilan-0-label" aria-describedby="pre-bilan-0-description">
               <div class="ml-3 flex flex-col">
                 <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -114,7 +114,7 @@
 
 
               <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-              <label @click="minus" class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <label @click="minus" class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
                 <input type="radio" name="enquete-interne" value="5" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-4-label" aria-describedby="enquete-interne-4-description">
                 <div class="ml-3 flex flex-col">
                   <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -125,7 +125,7 @@
               </label>
 
               <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-              <label @click="minus" class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <label @click="minus" class="relative border p-4 flex cursor-pointer focus:outline-none">
                 <input type="radio" name="enquete-interne" value="4" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-3-label" aria-describedby="enquete-interne-3-description">
                 <div class="ml-3 flex flex-col">
                   <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -136,7 +136,7 @@
               </label>
 
               <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-              <label @click="more" class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <label @click="more" class="relative border p-4 flex cursor-pointer focus:outline-none">
                 <input type="radio" name="enquete-interne" value="3" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-2-label" aria-describedby="enquete-interne-2-description">
                 <div class="ml-3 flex flex-col">
                   <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -157,7 +157,7 @@
                 </div>
               </label>
               <!-- Checked: "bg-indigo-50 border-indigo-200 z-10", Not Checked: "border-gray-200" -->
-              <label @click="more" class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer focus:outline-none">
+              <label @click="more" class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer focus:outline-none">
                 <input type="radio" name="enquete-interne" value="0" class="h-4 w-4 mt-0.5 cursor-pointer text-indigo-600 border-gray-300 focus:ring-indigo-500" aria-labelledby="enquete-interne-0-label" aria-describedby="enquete-interne-0-description">
                 <div class="ml-3 flex flex-col">
                   <!-- Checked: "text-indigo-900", Not Checked: "text-gray-900" -->
@@ -213,6 +213,9 @@ export default {
   methods: {
     changePreBilan () {
       this.displayEnqueteInterne = !this.displayEnqueteInterne
+    },
+    hidePreBilan () {
+      this.displayEnqueteInterne = false
     },
     nextPage () {
       // goto
