@@ -122,7 +122,7 @@
       <div class="w-full max-w-xl mx-auto pt-8">
         <div class="pb-5">
           <p class="mt-2 max-w-4xl text-xl text-gray-800">
-            Selon vous, la question ci-dessus permet d'évaluer votre aisance avec les outils numériques
+            Selon vous, la question ci-dessus permet d'estimer votre motivation au regard de la relative importance de votre ou vos objectifs ?
           </p>
         </div>
 
