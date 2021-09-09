@@ -1,7 +1,7 @@
 <template>
   <div class="antialiased">
     <!-- Stepper desktop -->
-    <nav class="hidden md:block py-12" aria-label="Progression">
+    <nav v-if="current" class="hidden md:block py-12" aria-label="Progression">
       <ol role="list" class="flex items-center justify-center">
         <li class="relative pr-8 lg:pr-20">
           <!-- Completed Step -->
@@ -125,7 +125,7 @@
     </nav>
 
     <!-- Stepper mobile -->
-    <nav class="block md:hidden py-12 flex items-center justify-center" aria-label="Progression">
+    <nav v-if="current" class="block md:hidden py-12 flex items-center justify-center" aria-label="Progression">
       <!-- <p class="text-sm font-medium">Step 2 of 4</p> -->
       <ol role="list" class="ml-8 flex items-center space-x-5">
         <li>
